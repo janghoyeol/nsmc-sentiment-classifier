@@ -1,0 +1,11 @@
+data/
+artifacts/
+checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.ckpt
+*.pt
+.env
+.pytest_cache/
