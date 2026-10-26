@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nsmc-sentiment-classifier
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: NSMC_MODEL_HF_REPO
+        value: snowcrab345/nsmc-sentiment-classifier
